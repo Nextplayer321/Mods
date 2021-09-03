@@ -53,12 +53,12 @@ public class SuricatoBabyRenderer {
 			CORPO_TODO = new ModelRenderer(this);
 			CORPO_TODO.setRotationPoint(4.0F, 24.0F, -8.0F);
 			CABECA = new ModelRenderer(this);
-			CABECA.setRotationPoint(-4.0F, -4.0F, 3.0F);
+			CABECA.setRotationPoint(-3.5F, -5.0F, 3.0F);
 			CORPO_TODO.addChild(CABECA);
-			CABECA.setTextureOffset(9, 28).addBox(-1.0F, -1.0F, -6.0F, 3.0F, 2.0F, 2.0F, 0.0F, false);
-			CABECA.setTextureOffset(14, 22).addBox(3.0F, -3.0F, -2.5F, 1.0F, 3.0F, 2.0F, 0.0F, false);
-			CABECA.setTextureOffset(0, 26).addBox(-3.0F, -3.0F, -2.5F, 1.0F, 3.0F, 2.0F, 0.0F, false);
-			CABECA.setTextureOffset(0, 13).addBox(-2.0F, -3.0F, -5.0F, 5.0F, 4.0F, 5.0F, 0.0F, false);
+			CABECA.setTextureOffset(9, 28).addBox(-1.5F, 0.0F, -6.0F, 3.0F, 2.0F, 2.0F, 0.0F, false);
+			CABECA.setTextureOffset(14, 22).addBox(2.5F, -2.0F, -2.5F, 1.0F, 3.0F, 2.0F, 0.0F, false);
+			CABECA.setTextureOffset(0, 26).addBox(-3.5F, -2.0F, -2.5F, 1.0F, 3.0F, 2.0F, 0.0F, false);
+			CABECA.setTextureOffset(0, 13).addBox(-2.5F, -2.0F, -5.0F, 5.0F, 4.0F, 5.0F, 0.0F, false);
 			CORPO = new ModelRenderer(this);
 			CORPO.setRotationPoint(0.0F, 0.0F, 0.0F);
 			CORPO_TODO.addChild(CORPO);
@@ -68,21 +68,21 @@ public class SuricatoBabyRenderer {
 			CORPO_TODO.addChild(RABO);
 			RABO.setTextureOffset(21, 12).addBox(4.0F, -3.0F, 3.0F, 1.0F, 7.0F, 1.0F, 0.0F, false);
 			PATA_FRENTE_DIREITA = new ModelRenderer(this);
-			PATA_FRENTE_DIREITA.setRotationPoint(-11.0F, -1.0F, 9.0F);
+			PATA_FRENTE_DIREITA.setRotationPoint(-2.5F, -3.0F, 3.5F);
 			CORPO_TODO.addChild(PATA_FRENTE_DIREITA);
-			PATA_FRENTE_DIREITA.setTextureOffset(20, 21).addBox(8.0F, -2.0F, -6.0F, 1.0F, 3.0F, 1.0F, 0.0F, false);
+			PATA_FRENTE_DIREITA.setTextureOffset(20, 21).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 3.0F, 1.0F, 0.0F, false);
 			PATA_FRENTE_ESQUERDA = new ModelRenderer(this);
-			PATA_FRENTE_ESQUERDA.setRotationPoint(-6.0F, -5.0F, 4.0F);
+			PATA_FRENTE_ESQUERDA.setRotationPoint(-4.5F, -3.0F, 3.5F);
 			CORPO_TODO.addChild(PATA_FRENTE_ESQUERDA);
-			PATA_FRENTE_ESQUERDA.setTextureOffset(16, 12).addBox(1.0F, 2.0F, -1.0F, 1.0F, 3.0F, 1.0F, 0.0F, false);
+			PATA_FRENTE_ESQUERDA.setTextureOffset(16, 12).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 3.0F, 1.0F, 0.0F, false);
 			PATA_ATRAS_DIREITA = new ModelRenderer(this);
-			PATA_ATRAS_DIREITA.setRotationPoint(-3.0F, -5.0F, 14.0F);
+			PATA_ATRAS_DIREITA.setRotationPoint(-2.5F, -3.0F, 10.5F);
 			CORPO_TODO.addChild(PATA_ATRAS_DIREITA);
-			PATA_ATRAS_DIREITA.setTextureOffset(0, 12).addBox(0.0F, 2.0F, -4.0F, 1.0F, 3.0F, 1.0F, 0.0F, false);
+			PATA_ATRAS_DIREITA.setTextureOffset(0, 12).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 3.0F, 1.0F, 0.0F, false);
 			PATA_ATRAS_ESQUERDA = new ModelRenderer(this);
-			PATA_ATRAS_ESQUERDA.setRotationPoint(-6.0F, -5.0F, 14.0F);
+			PATA_ATRAS_ESQUERDA.setRotationPoint(-4.5F, -3.0F, 10.5F);
 			CORPO_TODO.addChild(PATA_ATRAS_ESQUERDA);
-			PATA_ATRAS_ESQUERDA.setTextureOffset(0, 0).addBox(1.0F, 2.0F, -4.0F, 1.0F, 3.0F, 1.0F, 0.0F, false);
+			PATA_ATRAS_ESQUERDA.setTextureOffset(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 3.0F, 1.0F, 0.0F, false);
 		}
 
 		@Override
