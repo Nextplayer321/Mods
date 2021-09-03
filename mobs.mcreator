@@ -14,7 +14,7 @@
       "name": "Suricato",
       "type": "livingentity",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "suricato"
@@ -23,7 +23,10 @@
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "entity.mobs.ant": "Ant",
+      "item.mobs.ant_spawn_egg": "Ant Spawn Egg"
+    }
   },
   "foldersRoot": {
     "name": "~",
