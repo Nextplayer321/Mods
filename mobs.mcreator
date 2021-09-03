@@ -18,6 +18,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "suricato"
+    },
+    {
+      "name": "Toucan",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toucan"
     }
   ],
   "variable_elements": [],
@@ -25,7 +34,11 @@
   "language_map": {
     "en_us": {
       "entity.mobs.ant": "Ant",
-      "item.mobs.ant_spawn_egg": "Ant Spawn Egg"
+      "entity.mobs.suricato": "Suricato",
+      "item.mobs.ant_spawn_egg": "Ant Spawn Egg",
+      "item.mobs.suricato_spawn_egg": "Suricato Spawn Egg",
+      "entity.mobs.toucan": "Toucan",
+      "item.mobs.toucan_spawn_egg": "Toucan Spawn Egg"
     }
   },
   "foldersRoot": {
