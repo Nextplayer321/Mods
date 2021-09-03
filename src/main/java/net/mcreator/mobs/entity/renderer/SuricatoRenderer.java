@@ -25,7 +25,7 @@ public class SuricatoRenderer {
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(SuricatoEntity.entity, renderManager -> {
-				return new MobRenderer(renderManager, new Modelcustom_model(), 0.5f) {
+				return new MobRenderer(renderManager, new ModelSuricato(), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("mobs:textures/textura-suricato-pronto.png");
@@ -38,7 +38,7 @@ public class SuricatoRenderer {
 	// Made with Blockbench 3.9.3
 	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 	// Paste this class into your mod and generate all required imports
-	public static class Modelcustom_model extends EntityModel<Entity> {
+	public static class ModelSuricato extends EntityModel<Entity> {
 		private final ModelRenderer CORPO_TODO;
 		private final ModelRenderer CABECA;
 		private final ModelRenderer CORPO;
@@ -47,7 +47,7 @@ public class SuricatoRenderer {
 		private final ModelRenderer PATA_FRENTE_ESQUERDA;
 		private final ModelRenderer PATA_ATRAS_DIREITA;
 		private final ModelRenderer PATA_ATRAS_ESQUERDA;
-		public Modelcustom_model() {
+		public ModelSuricato() {
 			textureWidth = 64;
 			textureHeight = 64;
 			CORPO_TODO = new ModelRenderer(this);

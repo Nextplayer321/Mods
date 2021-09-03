@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Suricato",
     "mobLabel": "",
-    "mobModelName": "Modelcustom_model",
+    "mobModelName": "ModelSuricato",
     "mobModelTexture": "textura-suricato-pronto.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,

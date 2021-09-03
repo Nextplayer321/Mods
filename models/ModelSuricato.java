@@ -2,7 +2,7 @@
 // Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 // Paste this class into your mod and generate all required imports
 
-public static class Modelcustom_model extends EntityModel<Entity> {
+public static class ModelSuricato extends EntityModel<Entity> {
 	private final ModelRenderer CORPO_TODO;
 	private final ModelRenderer CABECA;
 	private final ModelRenderer CORPO;
@@ -12,7 +12,7 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 	private final ModelRenderer PATA_ATRAS_DIREITA;
 	private final ModelRenderer PATA_ATRAS_ESQUERDA;
 
-	public Modelcustom_model() {
+	public ModelSuricato() {
 		textureWidth = 64;
 		textureHeight = 64;
 
