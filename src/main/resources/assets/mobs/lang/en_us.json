@@ -1,1 +1,4 @@
-{}
+{
+  "entity.mobs.ant": "Ant",
+  "item.mobs.ant_spawn_egg": "Ant Spawn Egg"
+}
