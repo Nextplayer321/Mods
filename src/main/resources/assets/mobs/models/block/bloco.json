@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mobs:blocks/dundre_log_top",
+    "up": "mobs:blocks/dundre_log_top",
+    "north": "mobs:blocks/dundre_log",
+    "east": "mobs:blocks/dundre_log",
+    "south": "mobs:blocks/dundre_log",
+    "west": "mobs:blocks/dundre_log",
+    "particle": "mobs:blocks/dundre_log_top"
+  }
+}
