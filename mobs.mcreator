@@ -9,15 +9,21 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ant"
+    },
+    {
+      "name": "Suricato",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "suricato"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "entity.mobs.ant": "Ant",
-      "item.mobs.ant_spawn_egg": "Ant Spawn Egg"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
