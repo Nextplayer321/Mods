@@ -22,14 +22,13 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -125,10 +124,7 @@ public class ToucanEntity extends MobsModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.8, 20) {
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 0.8, 20) {
 				@Override
 				protected Vector3d getPosition() {
 					Random random = CustomEntity.this.getRNG();
@@ -138,17 +134,14 @@ public class ToucanEntity extends MobsModElements.ModElement {
 					return new Vector3d(dir_x, dir_y, dir_z);
 				}
 			});
-			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(6, new SwimGoal(this));
-			this.goalSelector.addGoal(7, new LeapAtTargetGoal(this, (float) 0.5));
-			this.goalSelector.addGoal(8, new MeleeAttackGoal(this, 1.2, false));
-			this.targetSelector.addGoal(9, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(10, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(11, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(12, new NearestAttackableTargetGoal(this, ToucanEntity.CustomEntity.class, false, false));
-			this.goalSelector.addGoal(13, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(14, new SwimGoal(this));
-			this.goalSelector.addGoal(15, new TemptGoal(this, 1, Ingredient.fromItems(Items.WHEAT_SEEDS), false));
+			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
+			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false));
+			this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(7, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(8, new LookRandomlyGoal(this));
+			this.targetSelector.addGoal(9, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 		}
 
 		@Override
