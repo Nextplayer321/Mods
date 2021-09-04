@@ -36,6 +36,18 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "suricato_baby"
+    },
+    {
+      "name": "Teste",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teste",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
