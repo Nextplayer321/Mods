@@ -1,10 +1,14 @@
 {
   "entity.mobs.ant": "Ant",
   "entity.mobs.suricato": "Suricato",
-  "item.mobs.ant_spawn_egg": "Ant Spawn Egg",
   "item.mobs.suricato_baby_spawn_egg": "Suricato Baby Spawn Egg",
   "entity.mobs.suricato_baby": "Suricato Baby",
+  "item.mobs.ant_spawn_egg": "Ant Spawn Egg",
   "item.mobs.suricato_spawn_egg": "Suricato Spawn Egg",
   "entity.mobs.toucan": "Toucan",
-  "item.mobs.toucan_spawn_egg": "Toucan Spawn Egg"
+  "item.mobs.toucan_spawn_egg": "Toucan Spawn Egg",
+  "entity.mobs.mage": "Mage",
+  "item.mobs.mage_spawn_egg": "Mage Spawn Egg",
+  "entity.mobs.dodo": "Dodo",
+  "item.mobs.dodo_spawn_egg": "Dodo Spawn Egg"
 }
