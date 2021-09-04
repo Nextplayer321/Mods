@@ -80,7 +80,7 @@ public class AntEntity extends MobsModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 4);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 0);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 1);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -104,11 +104,14 @@ public class AntEntity extends MobsModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.goalSelector.addGoal(1, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(2, new SwimGoal(this));
+			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1, false));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(7, new SwimGoal(this));
+			this.goalSelector.addGoal(9, new RandomWalkingGoal(this, 1));
 		}
 
 		@Override
