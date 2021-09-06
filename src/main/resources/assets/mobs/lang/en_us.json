@@ -5,6 +5,7 @@
   "item.mobs.suricato_baby_spawn_egg": "Suricato Baby Spawn Egg",
   "entity.mobs.suricato_baby": "Suricato Baby",
   "item.mobs.chapeu_chestplate": "Chapeu Body",
+  "item.mobs.bird_spawn_egg": "Bird Spawn Egg",
   "item.mobs.chapeu_boots": "Chapeu Boots",
   "item.mobs.ant_spawn_egg": "Ant Spawn Egg",
   "item.mobs.suricato_spawn_egg": "Suricato Spawn Egg",
@@ -14,5 +15,6 @@
   "item.mobs.mage_spawn_egg": "Mage Spawn Egg",
   "item.mobs.chapeu_leggings": "Chapeu Leggings",
   "entity.mobs.dodo": "Dodo",
+  "entity.mobs.bird": "Bird",
   "item.mobs.dodo_spawn_egg": "Dodo Spawn Egg"
 }
